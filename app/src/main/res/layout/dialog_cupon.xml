@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edittext_nombre_cupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre cupón"/>
+    <EditText
+        android:id="@+id/edittext_codigo_cupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código"/>
+    <EditText
+        android:id="@+id/edittext_precio_cupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"/>
+    <EditText
+        android:id="@+id/edittext_horario_cupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horario"/>
+    <EditText
+        android:id="@+id/edittext_descripcion_cupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Tipo de cupón"/>
+            <Spinner
+                android:id="@+id/spinner_tipo_cupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

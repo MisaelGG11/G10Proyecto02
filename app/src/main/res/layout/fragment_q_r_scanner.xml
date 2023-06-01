@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.QRScannerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/titleQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QR Scanner"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnScannerQr"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Scanner"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/contentQr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/descriptionQr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Toda la descripción del QR"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

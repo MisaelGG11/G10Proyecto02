@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TableLayout
+            android:id="@+id/crud_botones_busqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TableRow android:gravity="center">
+                <EditText
+                    android:id="@+id/edit_text_crud"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+                <ImageButton
+                    android:id="@+id/btn_buscar_crud"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_baseline_search" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_nuevo_crud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_nuevo_crud"
+        android:drawableLeft="@drawable/ic_baseline_place_24"
+        android:layout_marginHorizontal="25dp"/>
+    <ListView
+        android:id="@+id/list_view_crud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="50dp"/>
+
+
+</LinearLayout>
