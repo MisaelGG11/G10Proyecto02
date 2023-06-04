@@ -18,12 +18,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAllCaps="true"
-                android:textSize="30sp"
-                android:textStyle="bold"
+                android:letterSpacing="0.1"
                 android:padding="10dp"
+                android:text="Lista de mis cupones"
                 android:textAlignment="center"
-                android:text="Mis cupones"/>
+                android:textAllCaps="true"
+                android:textColor="#FF4081"
+                android:textSize="25sp"
+                android:textStyle="normal|bold|italic" />
+
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycleMisCupones"

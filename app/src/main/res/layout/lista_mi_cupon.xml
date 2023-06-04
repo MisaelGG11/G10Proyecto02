@@ -22,23 +22,12 @@
             android:orientation="horizontal"
             android:padding="6dp">
 
-            <ImageView
-                android:id="@+id/miCuponImg"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:padding="14sp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/ic_dinner_foreground" />
-
             <LinearLayout
                 android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_toRightOf="@+id/miCuponImg"
+                android:layout_toStartOf="@+id/miCuponImg"
+                android:layout_toLeftOf="@+id/miCuponImg"
                 android:orientation="vertical">
 
                 <TextView
@@ -48,6 +37,15 @@
                     android:text="Nombre del cupon"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/miCuponPrecio"
+                    android:layout_width="294dp"
+                    android:layout_height="wrap_content"
+                    android:text="$ 10.00"
+                    android:textColor="#B1B1B1"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -69,14 +67,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/miCuponPrecio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="$ 10.00"
-                    android:textColor="#B1B1B1"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+
 
             </LinearLayout>
 

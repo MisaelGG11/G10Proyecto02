@@ -11,56 +11,68 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Categorias"
-            android:textAllCaps="true"
+            android:letterSpacing="0.1"
+            android:padding="10dp"
+            android:text="Cupones canjeables"
             android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="30sp"/>
+            android:textAllCaps="true"
+            android:textColor="#FF4081"
+            android:textSize="25sp"
+            android:textStyle="normal|bold|italic" />
 
-        <LinearLayout
+
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+            android:columnCount="2"
+            android:rowCount="2">
 
             <Button
                 android:id="@+id/btnDes"
-                android:layout_width="wrap_content"
+                android:layout_width="144dp"
                 android:layout_height="wrap_content"
-                android:textSize="8sp"
+                android:layout_row="0"
+                android:layout_column="0"
                 android:layout_margin="1.5dp"
+                android:text="Desayuno"
+                android:textSize="8sp"
                 android:textStyle="bold"
-                android:text="Desayuno"/>
+                app:rippleColor="@color/quantum_amber700" />
+
             <Button
                 android:id="@+id/btnAlm"
-                android:layout_width="wrap_content"
+                android:layout_width="139dp"
                 android:layout_height="wrap_content"
-                android:textSize="8sp"
                 android:layout_margin="1.5dp"
-                android:textStyle="bold"
-                android:text="Almuerzo"/>
+                android:text="Almuerzo"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
             <Button
                 android:id="@+id/btnCen"
-                android:layout_width="wrap_content"
+                android:layout_width="144dp"
                 android:layout_height="wrap_content"
-                android:textSize="8sp"
                 android:layout_margin="1.5dp"
-                android:textStyle="bold"
-                android:text="Cena"/>
+                android:text="Cena"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
             <Button
                 android:id="@+id/btnSna"
-                android:layout_width="wrap_content"
+                android:layout_width="139dp"
                 android:layout_height="wrap_content"
-                android:textSize="8sp"
-                android:textStyle="bold"
                 android:layout_margin="1.5dp"
-                android:text="Snacks"/>
-        </LinearLayout>
+                android:text="Bocadillos"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+        </GridLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listCatRecycleView"
