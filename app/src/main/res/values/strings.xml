@@ -23,13 +23,13 @@
         <item>Eliminar</item>
     </string-array>
     <string-array name="restaurante_array">
-        <item>Editar</item>
-        <item>Ubicar</item>
+        <item>Editar Restaurante</item>
+        <item>Ubicacion geografica</item>
         <!--        <item>Eliminar</item>-->
     </string-array>
     <string name="dialog_crear">Nuevo</string>
     <string name="guardar_usuario_configuracion">Guardar</string>
-    <string name="guardado">Guardado!</string>
+    <string name="guardado">Se Guardo existosamente</string>
     <string name="dialog_editar">Editar</string>
     <string name="eliminado">Eliminado!</string>
     <string name="no_eliminado">No se puede eliminar</string>
@@ -47,19 +47,20 @@
     <string name="title_perfil_de_usuario_nombre">Nombre</string>
     <string name="title_perfil_de_usuario_apellidos">Apellidos</string>
     <string name="contrasena_no_coincide">Contraseñas no coinciden</string>
-    <string name="invalido_username">Datos no validos</string>
+    <string name="invalido_username">Datos invalidos</string>
     <string name="title_pefil_de_usuario">Perfil de Usuario</string>
-    <string name="title_telefono">Telefono</string>
+    <string name="title_telefono">Tel.</string>
 
-    <string name="lbl_datos_restaurante">Datos del Restaurante</string>
+    <string name="lbl_datos_restaurante">Informacion del Restaurante</string>
+    <string name="lbl_datos_restaurante2">Imagen del Restaurante</string>
     <string name="lbl_registrar_negocio">Registrar Restaurante</string>
-    <string name="btn_buscar_negocio">Buscar</string>
+    <string name="btn_buscar_negocio">Buscar restaurante</string>
     <string name="hint_nombre_negocio">Nombre</string>
     <string name="hint_dirección_negocio">Dirección</string>
     <string name="hint_latitud">Latitud</string>
     <string name="hint_longitud">Longitud</string>
     <string name="hint_id_map">ID Google Maps</string>
-    <string name="hint_telefono_negocio">Telefono</string>
+    <string name="hint_telefono_negocio">Tel.</string>
     <string name="guardar">Guardar</string>
     <string name="buscar">Buscar</string>
 </resources>

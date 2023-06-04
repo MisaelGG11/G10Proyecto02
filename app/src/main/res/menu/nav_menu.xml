@@ -3,11 +3,21 @@
 
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_home"
             android:checked="true"
             android:icon="@drawable/ic_baseline_home"
             android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_restaurante"
+            android:icon="@drawable/ic_baseline_fastfood_24"
+            android:title="Restaurantes" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Perfil" />
 
         <item
             android:id="@+id/nav_gestion_cupon"
@@ -30,14 +40,6 @@
             android:id="@+id/nav_mis_cupones"
             android:icon="@drawable/ic_restaurant_menu_foreground"
             android:title="Mis cupones" />
-        <item
-            android:id="@+id/nav_restaurante"
-            android:icon="@drawable/ic_baseline_fastfood_24"
-            android:title="Restaurantes" />
-        <item
-            android:id="@+id/nav_perfil"
-            android:icon="@drawable/ic_baseline_person_24"
-            android:title="Perfil" />
 
     </group>
 
