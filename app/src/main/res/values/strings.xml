@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">CouponsApp</string>
+    <string name="app_name">CuponMeals</string>
     <string name="api_maps_key">AIzaSyDfzM6e_uHjNlq-_6rk6nM-PEYWHOnLE20</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_navigation">navigation</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

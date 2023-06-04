@@ -22,7 +22,7 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CouponsApp">
+        android:theme="@style/Theme.CuponMeals">
 
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -58,7 +58,7 @@
             tools:replace="screenOrientation" /> <!-- configuracion del proveedor de archivos -->
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.couponsapp.fileprovider"
+            android:authorities="com.example.cuponMeals.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

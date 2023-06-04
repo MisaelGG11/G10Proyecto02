@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.couponsapp"
+        applicationId "com.example.cuponMeals"
         minSdk 22
         targetSdk 32
         versionCode 1
@@ -37,7 +37,7 @@ android {
         }
     }
 
-    namespace 'com.example.couponsapp'
+    namespace 'com.example.cuponMeals'
 }
 
 dependencies {
