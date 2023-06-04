@@ -19,7 +19,7 @@ import com.example.cuponMeals.R;
 import com.example.cuponMeals.adapter.RestauranteAdapter;
 
 public class GestionarRestauranteFragment extends Fragment {
-    private static final String PLACEHOLDER = "Apellido";
+    private static final String PLACEHOLDER = "Restaraunte";
     protected EditText buscarBar;
     protected ListView listView;
     protected String placeholder;
@@ -52,7 +52,7 @@ public class GestionarRestauranteFragment extends Fragment {
         view.findViewById(R.id.btn_buscar_crud).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(),"Buscando...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"Busqueda realizada",Toast.LENGTH_SHORT).show();
                 String targetItem=buscarBar.getText().toString();
                 adapter.filtrar(targetItem);
             }

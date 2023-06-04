@@ -44,9 +44,9 @@ public class RestauranteFragment extends Fragment {
     private Button btn_buscar,guardar;
     private EditText edit_nombre;
     private EditText edit_direccion;
-//    private EditText edit_longitud;
-//    private EditText edit_latitud;
-//    private EditText edit_id_maps;
+    private EditText edit_longitud;
+    private EditText edit_latitud;
+    private EditText edit_id_maps;
     private EditText edit_telefono;
     private ImageView img_negocio;
 
