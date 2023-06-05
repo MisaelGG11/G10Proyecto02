@@ -55,7 +55,7 @@ public class QRScannerFragment extends Fragment {
                     Toast.makeText(getContext(), "Cancelled", Toast.LENGTH_LONG).show();
                 } else {
                     descriptionQr.setVisibility(getView().VISIBLE);
-                    descriptionQr.setText(result.getContents());
+                    descriptionQr.setText("\n"+ result.getContents() + "\n");
                 }
             });
 

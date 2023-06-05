@@ -20,11 +20,6 @@
                 android:textStyle="bold"
                 android:layout_marginVertical="10dp"
                 android:text="@string/title_pefil_de_usuario" />
-<!--            <View-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="1dp"-->
-<!--                android:layout_marginBottom="30dp"-->
-<!--                android:background="@android:color/darker_gray"/>-->
             <LinearLayout
                 android:gravity="center"
                 android:orientation="vertical"
@@ -55,16 +50,13 @@
                         android:src="@drawable/ic_baseline_file_upload_24"/>
                 </LinearLayout>
             </LinearLayout>
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_username" />
+                android:text="@string/title_email" />
             <EditText
-                android:id="@+id/perfil_de_usuario_username"
-                android:enabled="false"
-                android:inputType="text"
+                android:id="@+id/perfil_de_usuario_email"
+                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"/>
@@ -82,13 +74,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_email" />
+                android:text="@string/title_username" />
             <EditText
-                android:id="@+id/perfil_de_usuario_email"
-                android:inputType="textEmailAddress"
+                android:id="@+id/perfil_de_usuario_username"
+                android:enabled="false"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

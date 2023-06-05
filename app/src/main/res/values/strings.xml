@@ -29,27 +29,28 @@
     </string-array>
     <string name="dialog_crear">Nuevo</string>
     <string name="guardar_usuario_configuracion">Guardar</string>
+
     <string name="guardado">Se Guardo existosamente</string>
     <string name="dialog_editar">Editar</string>
     <string name="eliminado">Eliminado!</string>
     <string name="no_eliminado">No se puede eliminar</string>
-    <string name="text_bienvenida">Bienvenid@</string>
-    <string name="text_informacion">Aplicación para la generación de cupones para restaurantes, validos con un tiempo limitado definido, canjeados por medio de  codigos QR</string>
+    <string name="text_bienvenida">Bienvenido/a</string>
+    <string name="text_informacion">Aplicación que gerena cupones para restaurantes, canjeados por medio de  codigos QR, que poseen un tiempo limita</string>
 
-    <string name="title_username">Username</string>
+    <string name="title_username">Nombre de usuario</string>
     <string name="title_rol">Rol</string>
-    <string name="title_email">Email</string>
+    <string name="title_email">Correo</string>
     <string name="title_contrasena">Contraseña</string>
     <string name="cambiar_contrasena_confirmacion_1">Confirmar contraseña</string>
     <string name="cambiar_contrasena_confirmacion_2">Confirmar Contraseña</string>
-    <string name="cambiar_contrasena">Cambiar Contraseña</string>
-    <string name="title_datos_personales">Datos Personales</string>
-    <string name="title_perfil_de_usuario_nombre">Nombre</string>
-    <string name="title_perfil_de_usuario_apellidos">Apellidos</string>
+    <string name="cambiar_contrasena">Actualizar Contraseña</string>
+    <string name="title_datos_personales">Información Personal</string>
+    <string name="title_perfil_de_usuario_nombre">Primer nombre</string>
+    <string name="title_perfil_de_usuario_apellidos">Primer Apellido</string>
     <string name="contrasena_no_coincide">Contraseñas no coinciden</string>
     <string name="invalido_username">Datos invalidos</string>
-    <string name="title_pefil_de_usuario">Perfil de Usuario</string>
-    <string name="title_telefono">Tel.</string>
+    <string name="title_pefil_de_usuario">Información perfil</string>
+    <string name="title_telefono">Numero telefono</string>
 
     <string name="lbl_datos_restaurante">Informacion del Restaurante</string>
     <string name="lbl_datos_restaurante2">Imagen del Restaurante</string>
