@@ -255,19 +255,19 @@ public class InicioActivity extends AppCompatActivity implements NavigationView.
         switch (item.getItemId()) {
             case R.id.nav_gestion_cupon:
                 replaceFragment(new GestionarCuponFragment());
-                setTitle("Gestionar cupon");
+                setTitle("Gestionar Cupón");
                 break;
             case R.id.nav_scanner:
                 replaceFragment(new QRScannerFragment());
-                setTitle("Escanear cupon");
+                setTitle("Escanear Cupón");
                 break;
             case R.id.nav_home:
                 replaceFragment(new HomeFragment());
-                setTitle("Home");
+                setTitle("Inicio");
                 break;
             case R.id.nav_gestion_usuario:
                 replaceFragment(new GestionarUsuarioFragment());
-                setTitle("Gestionar usuario");
+                setTitle("Gestionar Usuario");
                 break;
             case R.id.nav_canjear_cupon:
                 replaceFragment(new CanjearCuponFragment());
@@ -275,7 +275,7 @@ public class InicioActivity extends AppCompatActivity implements NavigationView.
                 break;
             case R.id.nav_mis_cupones:
                 replaceFragment(new MisCuponesFragment());
-                setTitle("Mis cupones");
+                setTitle("Mis Cupones");
                 break;
             case R.id.nav_cerrar_sesion:
                 cerrarSesion();

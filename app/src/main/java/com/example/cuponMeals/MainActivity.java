@@ -168,8 +168,8 @@ public class MainActivity extends AppCompatActivity {
         long usuarioCliente1 = usuarioControl.insertUsuario(new Usuario(3, (int)rolCliente, 0,"ClienteEjm", "grupo10", "FM19038@ues.edu.sv", "Fabio Ernesto", "Flores Mendoza", "78453298", 0,""));
        */
 
-        long usuarioEncargado2 = usuarioControl.insertUsuario(new Usuario(4, (int)rolEncargado, 3,"Encargado 2", "grupo10", "EL19004@ues.edu.sv", "Leonardo Alfredo", "Efigenio Landaverde", "79451299", 0,""));
-        long usuarioCliente2 = usuarioControl.insertUsuario(new Usuario(5, (int)rolCliente, 0,"Clau", "grupo10", "AC17033@ues.edu.sv", "Claudia Maria", "Argueta Caneza", "72443180", 0,""));
+        long usuarioEncargado2 = usuarioControl.insertUsuario(new Usuario(4, (int)rolEncargado, 3,"Encargado2", "grupo10", "EL19004@ues.edu.sv", "Leonardo Alfredo", "Efigenio Landaverde", "79451299", 0,""));
+        long usuarioCliente2 = usuarioControl.insertUsuario(new Usuario(5, (int)rolCliente, 0,"Cliente2", "grupo10", "AC17033@ues.edu.sv", "Claudia Maria", "Argueta Caneza", "72443180", 0,""));
     }
 
     public void llenarBD(){

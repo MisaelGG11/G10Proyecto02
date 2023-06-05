@@ -30,7 +30,7 @@ import java.util.Locale;
 
 public class GestionarCuponFragment extends Fragment {
 
-    private static final String PLACEHOLDER = "Tipo cupón";
+    private static final String PLACEHOLDER = "Tipo de Cupón";
     protected EditText buscarBar;
     protected ListView listView;
     protected String placeholder;

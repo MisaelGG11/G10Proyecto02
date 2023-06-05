@@ -30,7 +30,7 @@
     <string name="dialog_crear">Nuevo</string>
     <string name="guardar_usuario_configuracion">Guardar</string>
 
-    <string name="guardado">Se Guardo existosamente</string>
+    <string name="guardado">¡Se Guardo Existosamente!</string>
     <string name="dialog_editar">Editar</string>
     <string name="eliminado">¡Eliminado!</string>
     <string name="no_eliminado">No se puede eliminar</string>
@@ -48,9 +48,9 @@
     <string name="title_perfil_de_usuario_nombre">Primer Nombre</string>
     <string name="title_perfil_de_usuario_apellidos">Primer Apellido</string>
     <string name="contrasena_no_coincide">Las Contraseñas NO coinciden</string>
-    <string name="invalido_username">Datos Invalidos</string>
+    <string name="invalido_username">Datos Inválidos</string>
     <string name="title_pefil_de_usuario">Información Perfil</string>
-    <string name="title_telefono">Numero Telefonico</string>
+    <string name="title_telefono">Número Telefónico</string>
 
     <string name="lbl_datos_restaurante">Información del Restaurante</string>
     <string name="lbl_datos_restaurante2">Imagen del Restaurante</string>
