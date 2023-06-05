@@ -32,8 +32,8 @@
 
     <string name="guardado">Se Guardo existosamente</string>
     <string name="dialog_editar">Editar</string>
-    <string name="eliminado">¡Eliminado!</string>
-    <string name="no_eliminado">No se puede eliminar</string>
+    <string name="eliminado">Se Elimino el registro</string>
+    <string name="no_eliminado">No es posible eliminar el registro</string>
     <string name="text_bienvenida">Bienvenido/a</string>
     <string name="text_informacion">Disfruta los descuentos más deliciosos del pais con nuestra aplicación de cupones para restaurantes que pueden ser canjeados mediante códigos QR. Recuerda estos cupones tienen un tiempo de validez limitado.</string>
 

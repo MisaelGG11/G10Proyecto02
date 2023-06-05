@@ -51,8 +51,8 @@ public class UsuarioFragment extends Fragment {
     boolean isNew, isAdmin;
     EditText usernameEditText, passwordEditText, passwordEditText2, emailEditText, nombreEditText, apellidosEditText, telefono;
     EditText passwordConfirmation1, passwordConfirmation2;
-    Button guardarBtn, cambiarContrasenaBtn;
-    ImageButton tomarFotoBtn, subirFotoBtn;
+    Button guardarBtn, cambiarContrasenaBtn, tomarFotoBtn;
+    ImageButton subirFotoBtn;
     ImageView fotoPerfilImg;
     Spinner rolSpinner;
     int updatedCount = 0;
@@ -238,17 +238,12 @@ public class UsuarioFragment extends Fragment {
         return isValid;
     }
 
-    /**
-     * metodo para iniciar un intent para abrir la camara del telefono
-     * y esperar por el resultado
-     */
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
     }
-
 
     /**
      * metodo para esperar por el resultado de la camara intent
