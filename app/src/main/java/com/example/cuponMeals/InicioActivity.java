@@ -126,7 +126,7 @@ public class InicioActivity extends AppCompatActivity implements NavigationView.
                 }
 
                 //Servicio web para obtener correo por defecto
-                String url = "http://192.168.1.4/serviciosWeb/correo.php";
+                String url = "https://hs19011pdm115.000webhostapp.com/correo.php";
                 JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url,null, new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
