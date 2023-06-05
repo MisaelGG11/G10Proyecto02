@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Obtener datos inciales
         google_btn = findViewById(R.id.google_btn);
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail() .build();
         gsc = GoogleSignIn.getClient(this,gso);
         GoogleSignInAccount cuenta = GoogleSignIn.getLastSignedInAccount(this);
 
@@ -125,7 +125,8 @@ public class MainActivity extends AppCompatActivity {
                 task.getResult(ApiException.class);
                 navigateToInicioActivity();
             } catch (ApiException e) {
-                Toast.makeText(getApplicationContext(), "Ocurrio un error", Toast.LENGTH_SHORT).show();
+                e.printStackTrace();
+                Toast.makeText(getApplicationContext(), "Ocurrio un error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }
     }
