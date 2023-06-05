@@ -12,7 +12,7 @@
 
         <item
             android:id="@+id/nav_restaurante"
-            android:icon="@drawable/ic_baseline_fastfood_24"
+            android:icon="@drawable/baseline_restaurant_24"
             android:title="Restaurantes" />
         <item
             android:id="@+id/nav_perfil"
@@ -21,31 +21,31 @@
 
         <item
             android:id="@+id/nav_gestion_cupon"
-            android:icon="@drawable/ic_note_add_foreground"
-            android:title="Gestionar cupón" />
+            android:icon="@drawable/baseline_receipt_long_24"
+            android:title="Gestionar Cupones" />
 
         <item
             android:id="@+id/nav_scanner"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
             android:title="Scanner QR" />
         <item
             android:id="@+id/nav_gestion_usuario"
-            android:icon="@drawable/ic_group_foreground"
-            android:title="Gestionar usuario" />
+            android:icon="@drawable/baseline_usuarios"
+            android:title="Gestionar Usuarios" />
         <item
             android:id="@+id/nav_canjear_cupon"
-            android:icon="@drawable/ic_menu_book_foreground"
+            android:icon="@drawable/bmiscupones"
             android:title="Cupones" />
         <item
             android:id="@+id/nav_mis_cupones"
-            android:icon="@drawable/ic_restaurant_menu_foreground"
-            android:title="Mis cupones" />
+            android:icon="@drawable/miscupones"
+            android:title="Mis Cupones" />
 
     </group>
 
     <item
         android:id="@+id/nav_cerrar_sesion"
         android:icon="@drawable/ic_baseline_exit_to_app"
-        android:title="Cerrar sesión"/>
+        android:title="Cerrar Sesión"/>
 
 </menu>

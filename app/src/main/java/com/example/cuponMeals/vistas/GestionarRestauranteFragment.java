@@ -19,7 +19,7 @@ import com.example.cuponMeals.R;
 import com.example.cuponMeals.adapter.RestauranteAdapter;
 
 public class GestionarRestauranteFragment extends Fragment {
-    private static final String PLACEHOLDER = "Restaraunte";
+    private static final String PLACEHOLDER = "Restaurante";
     protected EditText buscarBar;
     protected ListView listView;
     protected String placeholder;

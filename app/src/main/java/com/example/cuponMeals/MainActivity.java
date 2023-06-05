@@ -168,8 +168,8 @@ public class MainActivity extends AppCompatActivity {
         long usuarioCliente1 = usuarioControl.insertUsuario(new Usuario(3, (int)rolCliente, 0,"ClienteEjm", "grupo10", "FM19038@ues.edu.sv", "Fabio Ernesto", "Flores Mendoza", "78453298", 0,""));
        */
 
-        long usuarioEncargado2 = usuarioControl.insertUsuario(new Usuario(4, (int)rolEncargado, 3,"Encargado 2", "grupo10", "EL19004@ues.edu.sv", "Leonardo Alfredo", "Efigenio Landaverde", "79451299", 0,""));
-        long usuarioCliente2 = usuarioControl.insertUsuario(new Usuario(5, (int)rolCliente, 0,"Clau", "grupo10", "AC17033@ues.edu.sv", "Claudia Maria", "Argueta Caneza", "72443180", 0,""));
+        long usuarioEncargado2 = usuarioControl.insertUsuario(new Usuario(4, (int)rolEncargado, 3,"Encargado2", "grupo10", "EL19004@ues.edu.sv", "Leonardo Alfredo", "Efigenio Landaverde", "79451299", 0,""));
+        long usuarioCliente2 = usuarioControl.insertUsuario(new Usuario(5, (int)rolCliente, 0,"Cliente2", "grupo10", "AC17033@ues.edu.sv", "Claudia Maria", "Argueta Caneza", "72443180", 0,""));
     }
 
     public void llenarBD(){
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 "Fte a super selectos, Av. José María Rivas y, Calle Dr Jose Matias Delgado, Cojutepeque",
                 "2273600",
                 13.7222099, -88.9436833,
-                "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&photo_reference=Aap_uEDyn5nMJVMpBgTxmRZfwLhcZ8DIRf1qPaW9r4feWvd6sVf7Bck1xr0rjIlPHLpcqvvtyYvtqRMneRu5RDHFu6SS1629CZOE13O6NsKgEbau0lVLq3YQlLQekwGmm7OQe23hS-88hR3g8Wrkg24uiqpJRG0IZw51fW4XygvMnLnFdqmL&key=AIzaSyDfzM6e_uHjNlq-_6rk6nM-PEYWHOnLE20");
+                "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&photo_reference=AZose0kDRpxXAWXsNkoZEmS9Im5s6umjD9n3Spwhj78bCsS4t6V8In4-Xx7za72PQ3OL1J7ulNO51OBmRl4bOxwNmv-xYXc0N4S-Yccba-t9gLD9iPM9TJRFzkg_O_Af2CQd3_SOQJx2id7dDwflm38yt9DWMagHWbokhYs9oDI7q0deqNor&key=AIzaSyDZQd1IGNPiUYaWaoee0cBdIdRlj-npYzQ");
         long rest1 = restauranteControl.insertRestaurante(restaurante1);
         restaurante1.setId_restaurante((int)rest1);
 
@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
                 "Laguna de Apastepeque, San Vicente, El Salvador",
                 "23163680",
                 13.6903701,-88.7426673,
-                "https://goo.gl/maps/MW8UkZ28hmixCaJ78");
+                "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&photo_reference=AZose0k_mn2CRpwNplG1PB8Es7LOBKeDvStvdRv37AKiVXVSH--HSjxYEscOKt3K0M6Jt-y1TNVUmtIAnmW2O2znqKBRX8uHtJMA3OGLxdQZ7KScKUgSnNd8PH9_s15LlAzfhvmO_EitZchmBJEXCbegNbIXor-mxe60MZ4-FbIcDN1iG-vH&key=AIzaSyDZQd1IGNPiUYaWaoee0cBdIdRlj-npYzQ");
         long rest2 = restauranteControl.insertRestaurante(restaurante2);
         restaurante2.setId_restaurante((int)rest2);
 
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
                 "PQ8Q+459, Calle, San Salvador",
                 "22264198",
                 13.7152924,-89.2145798,
-                "https://goo.gl/maps/fxRc97GJR5UHWUJDA");
+                "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&photo_reference=AZose0mejMWklV6YyszKYF1sDjMJKvhHsCDVzypv6L4OUABADQQL9fz8oioETqVs9qaxcH_omcLX0vW6ghwAJiqNM_TK6uL0qyY37hdZSxv6hZz5c5MR-F59P7msHb7meCe5y4RLvKU06-br-sxN1WacFeJwjlHJm88pAzup-PMKwaxx5WsX&key=AIzaSyDZQd1IGNPiUYaWaoee0cBdIdRlj-npYzQ");
         long rest3 = restauranteControl.insertRestaurante(restaurante3);
         restaurante3.setId_restaurante((int)rest3);
 
