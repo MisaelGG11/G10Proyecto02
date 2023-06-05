@@ -177,7 +177,7 @@ public class UsuarioFragment extends Fragment {
                     }
                     updatedCount = usuarioControl.updateUsuario(usuario);
                     if (updatedCount == 1) {
-                        Toast.makeText(getContext(), "Guardado!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(), "Se Guardo", Toast.LENGTH_LONG).show();
                     }
                 }
 
@@ -198,9 +198,9 @@ public class UsuarioFragment extends Fragment {
                                     passwordConfirmation2 = (EditText) dialogView.findViewById(R.id.cambiar_contrasena_confirmacion_2);
                                     Boolean isValid = cambiarContrasena();
                                     if (isValid) {
-                                        Toast.makeText(getContext(), "Guardado!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(getContext(), "Se Guardo", Toast.LENGTH_LONG).show();
                                     } else {
-                                        Toast.makeText(getContext(), "Contraseñas no coinciden. ¡Intentelo de nuevo!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(getContext(), "Contraseñas no coinciden. Revise!", Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });
