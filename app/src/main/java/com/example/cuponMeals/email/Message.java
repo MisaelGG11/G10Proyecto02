@@ -21,10 +21,10 @@ public class Message {
                 "<body>\n" +
                 "    <div class=\"logo\">\n" +
 
-                "        <img src=\"https://i.ibb.co/ZdxMD0L/logo-Grupo10.jpg\" alt=\"Logo\" border=\"0\">\n" +
+                "        <img src=\"https://i.ibb.co/GQTFBj1/logo-Grupo10.png\" alt=\"Logo\" border=\"0\">\n" +
                 "    </div>\n" +
                 "    <div class=\"mensaje\">\n" +
-                "        <h1 class=\"bienvenida\">Te deceamos una agradable bienvenida</h1>\n" +
+                "        <h1 class=\"bienvenida\">Te deseamos una agradable bienvenida</h1>\n" +
                 "        <h2 class=\"usuario\">"+usuario+"</h2>\n" +
                 "    </div>\n" +
                 "    <div class=\"informacion\">\n" +
