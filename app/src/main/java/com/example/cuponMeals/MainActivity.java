@@ -142,32 +142,73 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void llenarUsuarios(){
-        long rolAdmin = rolControl.insertRol(new Rol(1, "Admin")); //1
+        //ROLES
+        long rolAdmin = rolControl.insertRol(new Rol(1, "Administrador")); //1
         long rolEncargado = rolControl.insertRol(new Rol(2, "Encargado")); //2
         long rolCliente = rolControl.insertRol(new Rol(3, "Cliente"));  //3
 
-        long permisoAdmin = permisoControl.insertPermiso(new Permiso(1, "Gestionar usuario"));
-        long permisoEncargado = permisoControl.insertPermiso(new Permiso(2, "Gestionar cupon"));
-        long permisoCliente = permisoControl.insertPermiso(new Permiso(3, "Canjear cupon"));
+        //PERMISOS
+        long permisoAdmin = permisoControl.insertPermiso(new Permiso(1, "Gestionar Usuario"));
+        long permisoEncargado = permisoControl.insertPermiso(new Permiso(2, "Gestionar Cupon"));
+        long permisoCliente = permisoControl.insertPermiso(new Permiso(3, "Canjear Cupon"));
 
+        //ASIGNACION DE PERMISOS SEGUN ROL
         long rolPermiso1 = rolPermisoControl.insertRolPermiso(new RolPermiso(1,(int)rolAdmin, (int)permisoAdmin));
         long rolPermiso2 = rolPermisoControl.insertRolPermiso(new RolPermiso(2,(int)rolEncargado, (int)permisoEncargado));
         long rolPermiso3 = rolPermisoControl.insertRolPermiso(new RolPermiso(3,(int)rolCliente, (int)permisoCliente));
 
-        long usuarioAdmin = usuarioControl.insertUsuario(new Usuario(1, (int)rolAdmin, 0,"admin", "admin123", "admin@gmail.com", "Eduardo", "Orellana", "78787878", 0,""));
-        long usuarioEncargado = usuarioControl.insertUsuario(new Usuario(2, (int)rolEncargado, 1,"encargado", "encargado123", "encargado@gmail.com", "Julia", "Lopez", "79235499", 0,""));
-        long usuarioCliente = usuarioControl.insertUsuario(new Usuario(3, (int)rolCliente, 0,"cliente", "cliente123", "encargado@gmail.com", "Julia", "Lopez", "75757575", 0,""));
+        //INGRESO DE USUARIOS
+        long usuarioAdmin = usuarioControl.insertUsuario(new Usuario(1, (int)rolAdmin, 0,"admin", "admin123", "GG20031@ues.edu.sv", "Misael Antonio", "Gómez García", "77354200", 0,""));
+        long usuarioEncargado = usuarioControl.insertUsuario(new Usuario(2, (int)rolEncargado, 1,"encargado", "encargado123", "HS19011@ues.edu.sv", "Edwin Alexander", "Hernández Sánchez", "75234510", 0,""));
+        long usuarioCliente1 = usuarioControl.insertUsuario(new Usuario(3, (int)rolCliente, 0,"cliente", "cliente123", "FM19038@ues.edu.sv", "Fabio Ernesto", "Flores Mendoza", "78453298", 0,""));
+
+        /*
+        long usuarioAdmin = usuarioControl.insertUsuario(new Usuario(1, (int)rolAdmin, 0,"AdministradorEjm", "grupo10", "GG20031@ues.edu.sv", "Misael Antonio", "Gómez García", "77354200", 0,""));
+        long usuarioEncargado = usuarioControl.insertUsuario(new Usuario(2, (int)rolEncargado, 1,"EncargadoEjm", "grupo10", "HS19011@ues.edu.sv", "Edwin Alexander", "Hernández Sánchez", "75234510", 0,""));
+        long usuarioCliente1 = usuarioControl.insertUsuario(new Usuario(3, (int)rolCliente, 0,"ClienteEjm", "grupo10", "FM19038@ues.edu.sv", "Fabio Ernesto", "Flores Mendoza", "78453298", 0,""));
+       */
+
+        long usuarioEncargado2 = usuarioControl.insertUsuario(new Usuario(4, (int)rolEncargado, 3,"Encargado 2", "grupo10", "EL19004@ues.edu.sv", "Leonardo Alfredo", "Efigenio Landaverde", "79451299", 0,""));
+        long usuarioCliente2 = usuarioControl.insertUsuario(new Usuario(5, (int)rolCliente, 0,"Clau", "grupo10", "AC17033@ues.edu.sv", "Claudia Maria", "Argueta Caneza", "72443180", 0,""));
     }
 
     public void llenarBD(){
 
-        //Restaurante
-        Restaurante restaurante = new Restaurante("ChIJhawemWEwY48RW99ILymtG0I", "Pizza Hut Los Heroes", "Sobre Blvd. De los Heroes, a un costado de mundo feliz RR, Blvr. De Los Heroes, San Salvador, El Salvador","",13.7090082, -89.210617, "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&photo_reference=Aap_uEDyn5nMJVMpBgTxmRZfwLhcZ8DIRf1qPaW9r4feWvd6sVf7Bck1xr0rjIlPHLpcqvvtyYvtqRMneRu5RDHFu6SS1629CZOE13O6NsKgEbau0lVLq3YQlLQekwGmm7OQe23hS-88hR3g8Wrkg24uiqpJRG0IZw51fW4XygvMnLnFdqmL&key=AIzaSyDfzM6e_uHjNlq-_6rk6nM-PEYWHOnLE20");
-        long res1 = restauranteControl.insertRestaurante(restaurante);
-        restaurante.setId_restaurante((int)res1);
+        //INGRESO DE RESTAURANTES
+        //Pollo Campero
+        Restaurante restaurante1 = new Restaurante(
+                "RMqzwJH839LUQhea7?coh=178573&entry=tt",
+                "Pollo Campero, Cojutepeque",
+                "Fte a super selectos, Av. José María Rivas y, Calle Dr Jose Matias Delgado, Cojutepeque",
+                "2273600",
+                13.7222099, -88.9436833,
+                "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&photo_reference=Aap_uEDyn5nMJVMpBgTxmRZfwLhcZ8DIRf1qPaW9r4feWvd6sVf7Bck1xr0rjIlPHLpcqvvtyYvtqRMneRu5RDHFu6SS1629CZOE13O6NsKgEbau0lVLq3YQlLQekwGmm7OQe23hS-88hR3g8Wrkg24uiqpJRG0IZw51fW4XygvMnLnFdqmL&key=AIzaSyDfzM6e_uHjNlq-_6rk6nM-PEYWHOnLE20");
+        long rest1 = restauranteControl.insertRestaurante(restaurante1);
+        restaurante1.setId_restaurante((int)rest1);
 
+        //Restaurante EL FARO
+        Restaurante restaurante2 = new Restaurante(
+                "KQ28sz6YyxRZ1yBz7?coh=178573&entry=tt",
+                "El Faro Clareño, San Vicente",
+                "Laguna de Apastepeque, San Vicente, El Salvador",
+                "23163680",
+                13.6903701,-88.7426673,
+                "https://goo.gl/maps/MW8UkZ28hmixCaJ78");
+        long rest2 = restauranteControl.insertRestaurante(restaurante2);
+        restaurante2.setId_restaurante((int)rest2);
 
-        //TipoCupon
+        //Mister Donut
+        Restaurante restaurante3 = new Restaurante(
+                "f19MD2jokSjYNNqM6?coh=178573&entry=tt",
+                "Mister Donut, San Luis",
+                "PQ8Q+459, Calle, San Salvador",
+                "22264198",
+                13.7152924,-89.2145798,
+                "https://goo.gl/maps/fxRc97GJR5UHWUJDA");
+        long rest3 = restauranteControl.insertRestaurante(restaurante3);
+        restaurante3.setId_restaurante((int)rest3);
+
+        //INGRESO DE LOS TIPOS DE CUPONES
         long tipoDesayuno = tipoCuponControl.insertTipoCupon(new TipoCupon(1, "Desayuno"));
         TipoCupon tip1 = new TipoCupon(1, "Desayuno");
         long tipoAlmuerzo = tipoCuponControl.insertTipoCupon(new TipoCupon(2, "Almuerzo"));
@@ -178,48 +219,82 @@ public class MainActivity extends AppCompatActivity {
         TipoCupon tip4 = new TipoCupon(4, "Snacks");
 
         //Cupones
+        //POLLO CAMPERO
         long cup1 = cuponControl.insertCupon(new Cupon(
                 1,
-                restaurante,
-                tip2,
-                "CP001",
-                "Pizza gigante + Pan con ajo",
-                "Una pizza gigante de 12 porciones y 4 panes con ajo",
-                12.75,
-                "12:00pm - 23:59pm",
+                restaurante1,
+                tip3,
+                "C001",
+                "Pizza de 1 ingrediente",
+                "En la compra de una pizza Super Campero, obten pizza de 1 ingrediente a $5",
+                5.00,
+                "03:00pm - 07:59pm",
                 1));
 
         long cup2 = cuponControl.insertCupon(new Cupon(
                 2,
-                restaurante,
-                tip1,
-                "CP002",
-                "Combo típico",
-                "3 desayunos típicos + refil de café",
-                7.55,
+                restaurante1,
+                tip2,
+                "C002",
+                "3 menús de burrito Campero por $15.00",
+                "Disfruta tres deliciosos menú de burrito Campero por $15.00",
+                15.00,
                 "6:00am - 11:30pm",
                 1));
 
         long cup3 = cuponControl.insertCupon(new Cupon(
                 3,
-                restaurante,
-                tip3,
-                "CP003",
-                "Pasta Calssone Club",
-                "2 Pastas Calssone + 1 Pepsi de 1.25L",
-                5.65,
-                "5:45pm - 9:30pm",
+                restaurante1,
+                tip4,
+                "C003",
+                "3 Flanes por $3.00",
+                "Agrega 3 flanes en tu orden por $3.00 adicionales",
+                3.00,
+                "12:00pm - 8:30pm",
                 1));
 
+        //EL FARO
         long cup4 = cuponControl.insertCupon(new Cupon(
                 4,
-                restaurante,
+                restaurante2,
+                tip2,
+                "C004",
+                "Orden de Nachos",
+                "Agrega una orden de nachos en tu orden por $2.00 adicionales",
+                2.00,
+                "1:30am - 8:30pm",
+                1));
+
+        //MISTER DONUT
+        long cup5 = cuponControl.insertCupon(new Cupon(
+                5,
+                restaurante3,
                 tip4,
-                "CP004",
-                "Conos Putch",
-                "4 conos de helado de vainilla + topin de elección",
-                2.99,
-                "10:30am - 9:30pm",
+                "C005",
+                "Donas 2x1",
+                "Recibe 2 donas por el precio de una",
+                1.10,
+                "8:30am - 10:30pm",
+                1));
+        long cup6 = cuponControl.insertCupon(new Cupon(
+                6,
+                restaurante3,
+                tip1,
+                "C006",
+                "Tamales de Elote por $1.99",
+                "Agrega una tamal de Elote en tu desayuno por $1.99 adicionales",
+                1.99,
+                "7:30am - 10:30am",
+                1));
+        long cup7 = cuponControl.insertCupon(new Cupon(
+                7,
+                restaurante3,
+                tip3,
+                "C007",
+                "Café Gratis",
+                "En la compra de tu cena Mister Donut, obten un café gratis",
+                0.00,
+                "8:30am - 10:30pm",
                 1));
     }
 }
