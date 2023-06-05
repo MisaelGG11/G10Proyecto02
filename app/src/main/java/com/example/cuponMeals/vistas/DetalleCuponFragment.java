@@ -104,7 +104,7 @@ public class DetalleCuponFragment extends Fragment {
                             usuario,
                             dateForm
                     ));
-                    Toast.makeText(root.getContext(), "Se ha registrado el cupon", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(root.getContext(), "Su cupón ha sido canjeado exitosamente", Toast.LENGTH_SHORT).show();
                     enviarMensaje(name, dateForm, root);
                 }
                 catch (SQLiteException sql){
