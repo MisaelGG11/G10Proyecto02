@@ -101,7 +101,7 @@ public class InicioActivity extends AppCompatActivity implements NavigationView.
                         3,
                         0,
                         userString,
-                        "bixxortnnuis34",
+                        "PassTemporal22",
                         cuenta.getEmail(),
                         cuenta.getDisplayName(),
                         "",
@@ -153,7 +153,7 @@ public class InicioActivity extends AppCompatActivity implements NavigationView.
                 requestQueue.add(request);
 
             }
-            usuario = usuarioControl.traerUsuario(userString, "bixxortnnuis34");
+            usuario = usuarioControl.traerUsuario(userString, "PassTemporal22");
             Uri userPhoto = cuenta.getPhotoUrl();
             nombre.setText(nombreUser);
             email.setText(emailUser);
@@ -170,18 +170,6 @@ public class InicioActivity extends AppCompatActivity implements NavigationView.
             email.setText(usuario.getEmail());
             rol_usuario = usuario.getId_rol();
             id_usuario = usuario.getId_usuario();
-            /*
-            if (!usuario.getUri_foto_perfil().equals("")&& id_usuario<3){
-                //recuperando la imagen de donde fue almacenada
-                String directory = this.getFilesDir().toString();
-                File image=new File(directory,usuario.getUri_foto_perfil());
-                //guardando temporalmente la uri de el archivo.jpg
-                Uri photoURI = FileProvider.getUriForFile(this,
-                        "com.example.couponsapp.fileprovider",
-                        image);
-                //asginando el bitmap a el ImageView en UI
-                foto.setImageURI(photoURI);
-            }*/
         }
 
         //Inicializar en la opcion home
