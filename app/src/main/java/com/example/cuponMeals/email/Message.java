@@ -14,21 +14,22 @@ public class Message {
                 "        .logo { text-align: center; padding: 30px;}\n" +
                 "        .mensaje {text-align: center; padding: 30px;}\n" +
                 "        .bienvenida {color: black;}\n" +
-                "        .usuario {color:blue;}\n" +
-                "        .informacion { text-align: center; color: green; font-weight: bold; font-size: medium; font-family: Georgia, 'Times New Roman', Times, serif;}\n" +
+                "        .usuario {color:green;}\n" +
+                "        .informacion { text-align: center; color: gray; font-weight: bold; font-size: medium; font-family: Georgia, 'Times New Roman', Times, serif;}\n" +
                 "      </style>\n" +
                 "</head>\n" +
                 "<body>\n" +
                 "    <div class=\"logo\">\n" +
-                "        <img src=\"https://i.ibb.co/5547RQK/Recurso-4.png\" alt=\"Logo\" border=\"0\">\n" +
+
+                "        <img src=\"https://i.ibb.co/ZdxMD0L/logo-Grupo10.jpg\" alt=\"Logo\" border=\"0\">\n" +
                 "    </div>\n" +
                 "    <div class=\"mensaje\">\n" +
-                "        <h1 class=\"bienvenida\">Te damos la bienvenida</h1>\n" +
+                "        <h1 class=\"bienvenida\">Te deceamos una agradable bienvenida</h1>\n" +
                 "        <h2 class=\"usuario\">"+usuario+"</h2>\n" +
                 "    </div>\n" +
                 "    <div class=\"informacion\">\n" +
                 "        <p>\n" +
-                "            En nuestra aplicación, puedes buscar diferentes cupones que los restaurantes ponen a disposición para su uso.\n" +
+                "            Con nosostros puedes obtener diferentes cupones que los restaurantes otorgen a sus clientes mas fieles.\n" +
                 "        </p>\n" +
                 "    </div>\n" +
                 "\n" +
