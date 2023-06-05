@@ -19,8 +19,8 @@
     <string name="btn_nuevo_crud">Agregar</string>
     <string name="btnBuscar">Buscar</string>
     <string-array name="crud_array">
-        <item>Editar</item>
-        <item>Eliminar</item>
+        <item>Editar Usuario</item>
+        <item>Eliminar Usuario</item>
     </string-array>
     <string-array name="restaurante_array">
         <item>Editar Restaurante</item>
@@ -50,7 +50,7 @@
     <string name="contrasena_no_coincide">Contraseñas no coinciden</string>
     <string name="invalido_username">Datos invalidos</string>
     <string name="title_pefil_de_usuario">Información perfil</string>
-    <string name="title_telefono">Numero telefono</string>
+    <string name="title_telefono">Tel.</string>
 
     <string name="lbl_datos_restaurante">Informacion del Restaurante</string>
     <string name="lbl_datos_restaurante2">Imagen del Restaurante</string>

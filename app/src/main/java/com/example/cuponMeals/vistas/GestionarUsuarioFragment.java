@@ -28,7 +28,7 @@ import java.util.Locale;
 
 public class GestionarUsuarioFragment extends Fragment {
 
-    private static final String PLACEHOLDER = "Apellido";
+    private static final String PLACEHOLDER = "Buscador";
     protected EditText buscarBar;
     protected ListView listView;
     protected String placeholder;
@@ -64,7 +64,7 @@ public class GestionarUsuarioFragment extends Fragment {
                 Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-                intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Hable ahora");
+                intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Hable justo ahora :)");
 
                 try {
                     startActivityForResult(intent, 1111);
@@ -80,7 +80,7 @@ public class GestionarUsuarioFragment extends Fragment {
         view.findViewById(R.id.btn_buscar_crud).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(),"Buscando...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"Resultados encontrados",Toast.LENGTH_SHORT).show();
                 String targetItem=buscarBar.getText().toString();
                 if(targetItem!=""){
                     adapter.filtrar(targetItem);

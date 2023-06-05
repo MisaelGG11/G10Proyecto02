@@ -6,59 +6,66 @@
     android:orientation="vertical"
     android:paddingHorizontal="25dp"
     tools:context=".adapter.UsuarioAdapter">
+
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:text="Usuario"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"
+            android:text="Usuario: "
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/username_crud"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
         <TextView
-            android:text="rol"
-            android:layout_marginRight="5dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text=" - "
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/rol_crud"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
     </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
-            android:text="nombre"
-            android:layout_marginRight="5dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Nombre: "
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/nombre_usuario_crud"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
         <TextView
-            android:text="apellido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:text=", "
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/apellid_usuario_crud"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
     </LinearLayout>
 </LinearLayout>

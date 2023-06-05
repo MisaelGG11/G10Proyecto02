@@ -3,54 +3,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="25dp">
-        <Button
-            android:id="@+id/btn_nuevo_crud"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#3CB371"
-            android:text="@string/btn_nuevo_crud" />
+        android:padding="2dp">
+
         <TableLayout
             android:id="@+id/crud_botones_busqueda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TableRow android:gravity="center">
-                <ImageButton
-                    android:id="@+id/btn_buscar_audio"
-                    android:layout_width="50dp"
-                    android:layout_height="35dp"
-                    android:backgroundTint="#4169E1"
-                    android:background="@drawable/ic_baseline_mic" />
+
+            <TableRow
+                android:layout_width="396dp"
+                android:gravity="center">
+
                 <EditText
                     android:id="@+id/edit_text_crud"
-                    android:layout_width="wrap_content"
+                    android:layout_width="273dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName" />
-                <ImageButton
+
+                <Button
+                    android:id="@+id/btn_buscar_audio"
+                    android:layout_width="55dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="7dp"
+                    android:backgroundTint="@color/quantum_lightblueA200"
+                    android:drawableEnd="@drawable/baseline_mic_24" />
+
+                <Button
                     android:id="@+id/btn_buscar_crud"
-                    android:layout_width="50dp"
-                    android:layout_height="35dp"
-                    android:backgroundTint="#4169E1"
-                    android:background="@drawable/baseline_search_24" />
+                    android:layout_width="55dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="@color/quantum_lightblueA200"
+                    android:drawableEnd="@drawable/baseline_search_24" />
             </TableRow>
         </TableLayout>
     </LinearLayout>
 
     <ListView
         android:id="@+id/list_view_crud"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="371dp"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp" />
 
+    <Button
+        android:id="@+id/btn_nuevo_crud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/quantum_lightblueA200"
+        android:drawableRight="@drawable/baseline_add_24"
+        android:text="@string/btn_nuevo_crud"
+        android:textColor="#FDFDFD" />
 
 </LinearLayout>

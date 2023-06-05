@@ -234,10 +234,13 @@ public class UsuarioControl extends Control {
     }
 
     public ArrayList<Usuario> readMany(String apellidos){
-        String []args={"%"+apellidos+"%"};
+        String []args={"%"+apellidos+"%","%"+apellidos+"%","%"+apellidos+"%"};
         ArrayList <Usuario> usuarios=new ArrayList<>();
         this.abrir();
-        Cursor results=db.rawQuery("SELECT * FROM USUARIO WHERE APELLIDO LIKE ?",args);
+        Cursor results=db.rawQuery("SELECT * FROM USUARIO WHERE " +
+                "APELLIDO LIKE ? OR " +
+                "NOMBRE LIKE ? OR " +
+                "USERNAME LIKE ?",args);
 
         try{
             while(results.moveToNext()){

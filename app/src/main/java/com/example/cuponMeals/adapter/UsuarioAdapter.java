@@ -114,10 +114,22 @@ public class UsuarioAdapter extends BaseAdapter {
         username=customView.findViewById(R.id.username_crud);
         apellido=customView.findViewById(R.id.apellid_usuario_crud);
         rol=customView.findViewById(R.id.rol_crud);
+
         nombre.setText(items.get(position).getNombre());
         username.setText(items.get(position).getUsername());
         apellido.setText(items.get(position).getApellido());
-        rol.setText(String.valueOf(items.get(position).getId_rol()));
+
+        String rolUser = "";
+
+        if (items.get(position).getId_rol() == 1)
+            rolUser="Administrador";
+        if (items.get(position).getId_rol() == 2)
+            rolUser="Encargado";
+        if (items.get(position).getId_rol() == 3)
+            rolUser="Cliente";
+
+        rol.setText(rolUser);
+
         return customView;
     }
 }
