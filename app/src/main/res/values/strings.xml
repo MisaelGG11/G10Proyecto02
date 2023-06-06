@@ -22,6 +22,9 @@
         <item>Editar Usuario</item>
         <item>Eliminar Usuario</item>
     </string-array>
+    <string-array name="crud_array_Cupones">
+        <item>Eliminar Cupón</item>
+    </string-array>
     <string-array name="restaurante_array">
         <item>Editar Restaurante</item>
         <item>Ubicacion geografica</item>
@@ -64,4 +67,5 @@
     <string name="hint_telefono_negocio">Tel.</string>
     <string name="guardar">Guardar</string>
     <string name="buscar">Buscar</string>
+
 </resources>

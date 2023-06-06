@@ -102,15 +102,18 @@ public class GestionarCuponFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setItems(R.array.crud_array, new DialogInterface.OnClickListener() {
+                builder.setItems(R.array.crud_array_Cupones, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         switch (which) {
                             case 0:
+                                adapter.eliminar(position);
+                                break;
+                            /*case 0:
                                 adapter.editar(position);
                                 break;
                             case 1:
                                 adapter.eliminar(position);
-                                break;
+                                break;*/
                         }
                     }
                 });

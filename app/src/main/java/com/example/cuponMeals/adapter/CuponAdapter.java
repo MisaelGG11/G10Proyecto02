@@ -82,10 +82,11 @@ public class CuponAdapter extends BaseAdapter {
                         descripcion=dialogView.findViewById(R.id.edittext_descripcion_cupon);
                         //restaurante=dialogView.findViewById(R.id.spinner_restaurante);
                         tipoCuponSpinner=dialogView.findViewById(R.id.spinner_tipo_cupon);
-                        //disponible=dialogView.findViewById(R.id.edittext_disponible_cupon);
+                        //disponible=dialogView.findViewById(R.id.spinner_disponible);
 
                         //restauranteSelected=(Restaurante) restauranteSpinner.getSelectedItem();
                         tipoCuponSelected=(TipoCupon) tipoCuponSpinner.getSelectedItem();
+
                         nuevoCupon = tipoCuponSelected.getId_tipoCupon();
 
                         targetItem.setNombre_cupon(nombre.getText().toString());
@@ -95,7 +96,7 @@ public class CuponAdapter extends BaseAdapter {
                         targetItem.setDescripcion_cupon(descripcion.getText().toString());
                         targetItem.setRestaurante(restauranteSelected);
                         targetItem.setTipoCupon(tipoCuponSelected);
-                        //targetItem.setDisponible(Integer.getInteger(disponible.getText().toString()));
+                        targetItem.setDisponible(1);
                         int result=(int)control.insertCupon(targetItem);
                         targetItem.setId_cupon(result);
                         if (result>0){
@@ -125,6 +126,9 @@ public class CuponAdapter extends BaseAdapter {
 
         tipoCuponSpinner=customDialog.findViewById(R.id.spinner_tipo_cupon);
         tipoCuponSpinner.setAdapter(tipoCuponAdapter);
+
+
+
 
         nombre.setText(targetItem.getNombre_cupon());
         codigo.setText(targetItem.getCodigo_cupon());
@@ -156,6 +160,7 @@ public class CuponAdapter extends BaseAdapter {
                         descripcion=dialogView.findViewById(R.id.edittext_descripcion_cupon);
                         tipoCuponSpinner=dialogView.findViewById(R.id.spinner_tipo_cupon);
 
+
                         tipoCuponSelected=(TipoCupon) tipoCuponSpinner.getSelectedItem();
 
                         targetItem.setNombre_cupon(nombre.getText().toString());
@@ -165,6 +170,8 @@ public class CuponAdapter extends BaseAdapter {
                         targetItem.setDescripcion_cupon(descripcion.getText().toString());
                         targetItem.setRestaurante(restauranteSelected);
                         targetItem.setTipoCupon(tipoCuponSelected);
+                        targetItem.setDisponible(1);
+
 
                         int result=control.updateCupon(targetItem);
                         boolean isUpdated=result>0;

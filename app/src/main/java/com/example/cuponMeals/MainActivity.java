@@ -159,14 +159,15 @@ public class MainActivity extends AppCompatActivity {
         long rolPermiso3 = rolPermisoControl.insertRolPermiso(new RolPermiso(3,(int)rolCliente, (int)permisoCliente));
 
         //INGRESO DE USUARIOS
-        long usuarioAdmin = usuarioControl.insertUsuario(new Usuario(1, (int)rolAdmin, 0,"admin", "admin123", "GG20031@ues.edu.sv", "Misael Antonio", "Gómez García", "77354200", 0,""));
-        long usuarioEncargado = usuarioControl.insertUsuario(new Usuario(2, (int)rolEncargado, 1,"encargado", "encargado123", "HS19011@ues.edu.sv", "Edwin Alexander", "Hernández Sánchez", "75234510", 0,""));
-        long usuarioCliente1 = usuarioControl.insertUsuario(new Usuario(3, (int)rolCliente, 0,"cliente", "cliente123", "FM19038@ues.edu.sv", "Fabio Ernesto", "Flores Mendoza", "78453298", 0,""));
-
-        /*
         long usuarioAdmin = usuarioControl.insertUsuario(new Usuario(1, (int)rolAdmin, 0,"AdministradorEjm", "grupo10", "GG20031@ues.edu.sv", "Misael Antonio", "Gómez García", "77354200", 0,""));
         long usuarioEncargado = usuarioControl.insertUsuario(new Usuario(2, (int)rolEncargado, 1,"EncargadoEjm", "grupo10", "HS19011@ues.edu.sv", "Edwin Alexander", "Hernández Sánchez", "75234510", 0,""));
         long usuarioCliente1 = usuarioControl.insertUsuario(new Usuario(3, (int)rolCliente, 0,"ClienteEjm", "grupo10", "FM19038@ues.edu.sv", "Fabio Ernesto", "Flores Mendoza", "78453298", 0,""));
+
+        /*
+       long usuarioAdmin = usuarioControl.insertUsuario(new Usuario(1, (int)rolAdmin, 0,"admin", "admin123", "GG20031@ues.edu.sv", "Misael Antonio", "Gómez García", "77354200", 0,""));
+        long usuarioEncargado = usuarioControl.insertUsuario(new Usuario(2, (int)rolEncargado, 1,"encargado", "encargado123", "HS19011@ues.edu.sv", "Edwin Alexander", "Hernández Sánchez", "75234510", 0,""));
+        long usuarioCliente1 = usuarioControl.insertUsuario(new Usuario(3, (int)rolCliente, 0,"cliente", "cliente123", "FM19038@ues.edu.sv", "Fabio Ernesto", "Flores Mendoza", "78453298", 0,""));
+
        */
 
         long usuarioEncargado2 = usuarioControl.insertUsuario(new Usuario(4, (int)rolEncargado, 3,"Encargado2", "grupo10", "EL19004@ues.edu.sv", "Leonardo Alfredo", "Efigenio Landaverde", "79451299", 0,""));
@@ -227,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
                 tip3,
                 "C001",
                 "Pizza de 1 ingrediente",
-                "En la compra de una pizza Super Campero, obten pizza de 1 ingrediente a $5",
+                "En la compra de una pizza Super Campero, obten pizza de un ingrediente a $5",
                 5.00,
                 "03:00pm - 07:59pm",
                 1));
@@ -240,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
                 "3 menús de burrito Campero por $15.00",
                 "Disfruta tres deliciosos menú de burrito Campero por $15.00",
                 15.00,
-                "6:00am - 11:30pm",
+                "6:00am - 4:30pm",
                 1));
 
         long cup3 = cuponControl.insertCupon(new Cupon(
@@ -263,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
                 "Orden de Nachos",
                 "Agrega una orden de nachos en tu orden por $2.00 adicionales",
                 2.00,
-                "1:30am - 8:30pm",
+                "1:30pm - 8:30pm",
                 1));
 
         //MISTER DONUT
@@ -295,7 +296,7 @@ public class MainActivity extends AppCompatActivity {
                 "Café Gratis",
                 "En la compra de tu cena Mister Donut, obten un café gratis",
                 0.00,
-                "8:30am - 10:30pm",
+                "6:30pm - 10:30pm",
                 1));
     }
 }

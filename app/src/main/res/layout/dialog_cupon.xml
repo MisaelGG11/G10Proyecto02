@@ -7,7 +7,7 @@
         android:id="@+id/edittext_nombre_cupon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre cupón"/>
+        android:hint="Nombre del Cupón"/>
     <EditText
         android:id="@+id/edittext_codigo_cupon"
         android:layout_width="match_parent"
@@ -17,6 +17,7 @@
         android:id="@+id/edittext_precio_cupon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="number"
         android:hint="Precio"/>
     <EditText
         android:id="@+id/edittext_horario_cupon"
@@ -37,11 +38,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
-                android:text="Tipo de cupón"/>
+                android:text="Tipo de Cupón"/>
             <Spinner
                 android:id="@+id/spinner_tipo_cupon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </TableRow>
+
     </TableLayout>
 </LinearLayout>
