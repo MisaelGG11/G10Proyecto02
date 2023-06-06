@@ -118,7 +118,7 @@ public class DetalleCuponFragment extends Fragment {
 
     //Envio de registro ok
     public void enviarMensaje(String nombre, int idDeIsuario , String fecha, View view){
-        String mensaje = "Se a canjeado el cupon "+nombre+", Fecha: "+fecha + "Por el usuario con id: " + idDeIsuario ;
+        String mensaje = "Se a canjeado el cupon "+nombre+", Fecha: "+fecha + ", Por el usuario con id: " + idDeIsuario ;
         try {
             SmsManager sms = SmsManager.getDefault();
             sms.sendTextMessage("79656302",null,mensaje,null,null);
