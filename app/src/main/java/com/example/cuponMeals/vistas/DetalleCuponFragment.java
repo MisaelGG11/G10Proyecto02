@@ -105,7 +105,7 @@ public class DetalleCuponFragment extends Fragment {
                             dateForm
                     ));
                     Toast.makeText(root.getContext(), "Su cupón ha sido canjeado exitosamente", Toast.LENGTH_SHORT).show();
-                    enviarMensaje(name, dateForm, root);
+                    enviarMensaje(name, id_usuario,dateForm, root);
                 }
                 catch (SQLiteException sql){
                     sql.printStackTrace();
@@ -117,15 +117,15 @@ public class DetalleCuponFragment extends Fragment {
     }
 
     //Envio de registro ok
-    public void enviarMensaje(String nombre, String fecha, View view){
-        String mensaje = "El usuario a canjeado el cupon "+nombre+" fecha: "+fecha;
+    public void enviarMensaje(String nombre, int idDeIsuario , String fecha, View view){
+        String mensaje = "Se a canjeado el cupon "+nombre+", Fecha: "+fecha + "Por el usuario con id: " + idDeIsuario ;
         try {
             SmsManager sms = SmsManager.getDefault();
-            sms.sendTextMessage("79235499",null,mensaje,null,null);
-            Toast.makeText(view.getContext(), "Mensaje Enviado.", Toast.LENGTH_LONG).show();
+            sms.sendTextMessage("79656302",null,mensaje,null,null);
+            Toast.makeText(view.getContext(), "Se envio el MSM", Toast.LENGTH_LONG).show();
         }
         catch (Exception e) {
-            Toast.makeText(view.getContext(), "Mensaje no enviado, datos incorrectos.", Toast.LENGTH_LONG).show();
+            Toast.makeText(view.getContext(), "El Mensaje no se envio, revise los datos.", Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
 
