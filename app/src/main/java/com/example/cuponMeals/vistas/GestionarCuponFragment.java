@@ -84,7 +84,7 @@ public class GestionarCuponFragment extends Fragment {
         view.findViewById(R.id.btn_buscar_crud).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "Buscando...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Resultados encontrados", Toast.LENGTH_SHORT).show();
                 String targetItem = buscarBar.getText().toString();
                 if (targetItem != "") {
                     adapter.filtrar(targetItem);
@@ -108,12 +108,6 @@ public class GestionarCuponFragment extends Fragment {
                             case 0:
                                 adapter.eliminar(position);
                                 break;
-                            /*case 0:
-                                adapter.editar(position);
-                                break;
-                            case 1:
-                                adapter.eliminar(position);
-                                break;*/
                         }
                     }
                 });
@@ -130,12 +124,11 @@ public class GestionarCuponFragment extends Fragment {
             ArrayList<String> results = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
             String strSpeech = results.get(0);
             buscarBar.setText(strSpeech);
-            Toast.makeText(getContext(), "Buscando...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Resultados encontrados", Toast.LENGTH_SHORT).show();
             String targetItem = buscarBar.getText().toString();
             if (targetItem != "") {
                 adapter.filtrar(targetItem);
             }
-            //lv.setAdapter(new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, results));
         }
         buscarBar.setText("");
         super.onActivityResult(requestCode, resultCode, data);

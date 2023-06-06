@@ -105,6 +105,7 @@ public class UsuarioAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View customView, ViewGroup parent) {
         TextView nombre,username,email, apellido, password, telefono, rol;
+
         if(customView == null){
             customView = LayoutInflater.from(context).inflate(R.layout.item_usuario,parent,false);
         }else{

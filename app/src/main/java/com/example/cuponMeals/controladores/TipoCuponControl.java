@@ -3,6 +3,7 @@ package com.example.cuponMeals.controladores;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.widget.Toast;
 
 import com.example.cuponMeals.dbHelper.Control;
 import com.example.cuponMeals.modelos.TipoCupon;
@@ -35,6 +36,8 @@ public class TipoCuponControl extends Control {
                         result.getInt(0),
                         result.getString(1)
                 );
+
+
                 list.add(tipoCupon);
             }while (result.moveToNext());
         }
