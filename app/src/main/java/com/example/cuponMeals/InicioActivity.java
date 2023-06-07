@@ -14,10 +14,12 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -310,5 +312,25 @@ public class InicioActivity extends AppCompatActivity implements NavigationView.
         }
         return super.onOptionsItemSelected(item);
     }
+    private boolean backPressedOnce = false;
 
+    @Override
+    public void onBackPressed() {
+        if (backPressedOnce) {
+            super.onBackPressed();
+            finish(); // Cierra la aplicación
+            return;
+        }
+
+        backPressedOnce = true;
+        Toast.makeText(this, "Presiona dos veces para salir de su sesión", Toast.LENGTH_SHORT).show();
+
+        // Restablece el estado de backPressedOnce después de 1 segundo
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                backPressedOnce = false;
+            }
+        }, 1000);
+    }
 }
